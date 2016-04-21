@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_scheduel"
+    
+    android:orientation="vertical" >
+     <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        
+        android:id="@+id/line_week">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周一"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周二"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周三"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周四"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周五"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周六"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周日"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:id="@+id/scrollView"
+        android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_layout">
+            </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

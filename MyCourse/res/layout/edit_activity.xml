@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_blue">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"       
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true" >
+        
+       	<Button
+       	    android:id="@+id/backButton"
+       	    android:layout_alignParentLeft="true"
+       	    android:layout_marginLeft="10dp"        	
+        	android:layout_width="40dip"
+        	android:layout_height="50dip"
+        	android:text="@string/back" />
+       	
+       	<Button
+    	    android:id="@+id/button2"
+    	    style="?android:attr/buttonStyleSmall"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"    	   
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginRight="10dp"
+    	    android:text="待开发" />
+       	
+       	<TextView
+       	    android:id="@+id/dateText"
+       	    android:layout_toRightOf="@id/backButton"
+       	    android:layout_marginLeft="10dp"        	
+        	android:layout_width="80dip"
+        	android:layout_height="fill_parent"
+        	android:paddingTop="5dip"
+        	android:text="@string/dateText" />
+
+   	 	<Button
+   	 	    android:id="@+id/timeSetButton"
+   	 	    android:layout_toLeftOf="@id/button2"
+   	 	    android:layout_marginRight="10dp"        	
+        	style="?android:attr/buttonStyleSmall"
+        	android:layout_width="33dip"
+        	android:layout_height="33dip"
+        	android:background="@drawable/clock" />
+
+    	<TextView
+        	android:id="@+id/timeText"
+        	android:layout_toLeftOf="@id/timeSetButton"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" />
+
+    	
+         
+    </RelativeLayout>   
+     <EditText
+        android:id="@+id/editText"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cursorVisible="true"
+        android:visibility="visible"
+        android:gravity="top"
+        android:textSize="20sp"
+        android:bufferType="normal"
+        
+        />
+    
+</RelativeLayout>

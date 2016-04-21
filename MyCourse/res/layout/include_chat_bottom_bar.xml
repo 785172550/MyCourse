@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_comment_emo_bar"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp" >
+        
+	           <com.mycourse.view.EmoticonsEditText
+	            android:id="@+id/edit_user_comment"
+	            android:layout_width="0dp"
+	            android:layout_height="40dp"
+	            android:layout_marginLeft="6dp"
+	            android:layout_marginRight="6dp"
+	            android:layout_marginTop="3dp"
+	            android:layout_weight="1.0"
+	            android:imeOptions="actionSend"
+	            android:layout_marginBottom="3dp"
+	            android:background="@drawable/skin_searchbar_input_theme_version2"
+	            android:padding="5dp" />
+	       
+	           <Button
+	            android:id="@+id/btn_chat_send"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:background="@drawable/btn_chat_send_selector"
+	            android:gravity="center"
+	           
+	            android:textColor="@color/base_color_text_black" >
+	        </Button>
+	        
+	        
+	        
+       </LinearLayout>
+        
+</LinearLayout>

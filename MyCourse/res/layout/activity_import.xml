@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+ 
+  <LinearLayout
+      android:id="@+id/linearLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp" >
+     <TextView 
+      android:id="@+id/zhanghao"
+      android:text=" 账号   "
+       android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textSize="18sp"
+      />
+ 	 <EditText
+     	 android:id="@+id/editText1"
+     	 android:layout_width="match_parent"
+     	 android:layout_height="wrap_content"
+     	 android:hint="请输入帐号名"
+     	 android:background="@drawable/selector_edittext_account"
+    	android:ems="10" >
+
+      <requestFocus />
+   </EditText>
+ </LinearLayout>
+ 
+
+   <LinearLayout
+          android:id="@+id/linearLayout2"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_marginTop="15dp" 
+	       android:layout_below="@id/linearLayout1"
+	      >
+	     <TextView 
+	       android:id="@+id/mima"
+	       android:text=" 密码   "
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:textStyle="bold"
+	       android:textSize="18sp"
+	      />
+	 		 <EditText
+	     	 android:id="@+id/editText2"
+	     	 android:layout_width="match_parent"
+	     	 android:layout_height="wrap_content"
+	     	 android:hint="请输入密码"
+	     	 android:background="@drawable/selector_edittext_account"
+    			android:ems="10" >
+
+      		<requestFocus />
+  		</EditText>
+	</LinearLayout>
+	<LinearLayout 
+     	  android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:orientation="vertical"
+    >
+
+		<Button
+		    android:id="@+id/importB"
+		    android:layout_marginTop="10dp"
+		    android:layout_below="@id/linearLayout2"		    
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/selector_logout"
+		    android:text="  导入课表   "
+		    android:textColor="#FFFFFF"	
+		    android:layout_gravity="right"	    
+		    android:textSize="18sp" 
+		    android:layout_marginRight="10dp"
+		    />
+
+	</LinearLayout>
+   
+	
+</LinearLayout>

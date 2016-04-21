@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="13dp" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_chat_top" >
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/base_scrollview_top_height"
+            android:layout_height="@dimen/base_scrollview_top_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="头像"
+            android:layout_marginLeft="@dimen/margin_chat_top"
+            android:src="@drawable/default_avatar"
+            android:scaleType="fitXY" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:background="@drawable/bg_msgbox_receive_normal"
+            android:gravity="left|center"
+            android:layout_centerInParent="true">
+            
+            
+            <TextView
+	            android:id="@+id/tv_message"
+	            android:autoLink="web|email"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:lineSpacingExtra="2dp"
+	            android:maxWidth="225.0dip"     
+	            android:layout_gravity="center"  
+	            android:textColor="#ff000000"
+	            android:textSize="15sp" />
+        </LinearLayout>
+
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

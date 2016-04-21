@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="white">#ffffffff</color>
+     
+    <color name="common_edit_layout_pressed">#FFF8DC</color>
+    <color name="common_actiov_bar_right_btn_n">#6170E3</color>
+    <color name="common_actiov_bar_right_btn_p">#3866BB</color>
+    
+    <color name="common_actiov_bar_right_btn_female_n">#e76552</color>
+    <color name="common_actiov_bar_right_btn_female_p">#ea3217</color>
+    
+     <color name="base_color_text_white">#ffffff</color>
+     
+     <color name="theme_bg_color">#f0f2f5</color>
+      <color name="transparent">#00000000</color>
+      <color name="base_bg">#f4f6f6</color>
+      
+      <color name="base_color_text_black">#3e3e39</color>
+      <!-- 课表 格子 -->
+      <color name="color_background_course" >#2F9BDF</color>
+</resources>
